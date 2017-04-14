@@ -4,50 +4,59 @@
   <meta charset="utf-8">
   <title>Draftix | Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <div class="nav grid">
-      <div class="unit xs-1-4">
-        <img class="logo" src="images/draftix-logo.svg" alt="">
+    <div class="grid">
+      <div class="unit xs-1-4 island-1-4">
+        <img class="logo icon i-48" src="images/draftix-logo.svg" alt="">
       </div>
       <nav class="unit xs-3-4">
-        <ul class="list-group list-group-inline ">
-          <li><a>Features</a></li>
-          <li><a>Pricing</a></li>
-          <li><a>Sign Up</a></li>
+      <input type="checkbox" class="nav-check" id="nav-check">
+      <label class="nav-label" for="nav-check">
+        <img class="nav-open icon i-48" src="images/nav-icon-open.svg" alt="Open Navigation">
+        <img class="nav-close icon i-48" src="images/nav-icon-close.svg" alt="Close Navigation">
+      </label>
+        <ul class="nav list-group text-upper">
+          <li class="push-1-2"><a>Features</a></li>
+          <li class="push-1-2"><a>Pricing</a></li>
+          <li class="push-1-2"><a>Resources</a></li>
+          <li class="push-1-2"><a>Sign Up</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-    <div class="banner grid">
-      <div class="unit xs-1">
-        <img class="img-flex" src="images/placeholder-16by9.svg" alt="">
+    <div class="banner grid relative push-2">
+      <div class="crop unit unit-content-center xs-1">
+        <img class="home-banner overflow" src="images/banner-tablet-shapes.jpg" alt="banner">
       </div>
-      <div class="unit">
-        <h1>Be your own design team</h1>
-        <p>Draftix turns everyone into a professional. Whether you're a beginner or a design expert, we make creating layouts smoother than you ever thought possible.</p>
-        <a class="btn">Try It</a>
+      <div class="unit banner-text absolute text-center pin-c xs-2-3 s-1-2">
+        <h1 class="not-bold push-2">Be your own design team</h1>
+        <p class="push-2 mega island">Draftix makes creating layouts smoother than you ever thought possible.</p>
+        <a class="btn btn-red text-upper gutter island-1-2">Get Started</a>
       </div>
     </div>
 
-    <ol class="list-group grid">
-      <li class="list-group-item">
-        <i class="icon"><img src="" alt=""></i>
-        <span class="icon-label">Text Edit</span>
+    <ol class="list-group grid island-1-2">
+      <li class="unit island list-group-item xs-1">
+        <i class="icon i-96"><img src="images/home-text-edit-icon.svg" alt=""></i>
+        <span class="icon-label bold text-upper gutter-1-2 push">Text Edit</span>
       </li>
-      <li class="list-group-item">
-        <i class="icon"><img src="" alt=""></i>
-        <span class="icon-label">Sketch Tool</span>
+      <li class="unit island list-group-item xs-1">
+        <i class="icon i-96"><img src="images/home-sketch-tool-icon.svg" alt=""></i>
+        <span class="icon-label bold text-upper gutter-1-2 push">Sketch Tool</span>
       </li>
-      <li class="list-group-item">
-        <i class="icon"><img src="" alt=""></i>
-        <span class="icon-label">Photo Editor</span>
+      <li class="unit island list-group-item xs-1">
+        <i class="icon i-96"><img src="images/home-photo-editor-icon.svg" alt=""></i>
+        <span class="icon-label bold text-upper gutter-1-2 push">Photo Editor</span>
+        <p></p>
       </li>
     </ol>
 

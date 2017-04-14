@@ -1,3 +1,94 @@
-ul {
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+  display: none;
+
+}
+
+.nav-check:checked ~ .nav{
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
   display: inline-block;
+  width: 40px;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+label.nav-label::before {
+  display: none;
+}
+
+.home-banner {
+  height: 35em;
+}
+
+.home-banner img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.4;
+}
+
+.btn-red {
+  background-color: #d94650;
+  border:  1px solid #d94650;
+}
+
+.banner-text p {
+  background-color: rgba(255, 255, 255, .75);
+  border-radius: 15px;
+}
+
+.icon-label {
+  color: #d94650;
+}
+
+@media only screen and (min-width: 25em) {
+
+
+@media only screen and (min-width: 35em) {
+
+height:25em;
+
+  .home-banner {
+    height: auto;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  .home-banner {
+    height: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
 }
