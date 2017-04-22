@@ -73,13 +73,19 @@ li {
 }
 
 .home-icon {
-  height: 250px;
-  width: 250px;
+  max-width: 400px;
 }
 
 .card-type-1 {
   display: none;
+  max-width: 400px;
 }
+
+.card-type-3 {
+  display: none;
+  max-width: 400px;
+}
+
 
 .red {
   color: #d94650;
@@ -91,11 +97,23 @@ li {
 
 .cards-container {
   max-width: 1000px;
+  min-height: 250px;
 }
 
 .icon-list {
   box-shadow: 0 15px 15px #e6e6e6;
-  min-height: 400px;
+}
+
+.icons {
+  max-width: 1000px;
+}
+
+.icon-text {
+  max-width: 250px;
+}
+
+.back-lt-gray {
+  background-color: #f1f1f1;
 }
 
 @media only screen and (min-width: 38em) {
@@ -105,6 +123,14 @@ li {
   }
 
   .card-type-2 {
+    display: none;
+  }
+
+  .card-type-3 {
+    display: inline-block;
+  }
+
+  .card-type-4 {
     display: none;
   }
 
