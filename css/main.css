@@ -4,7 +4,8 @@ html {
 
 .nav {
   display: none;
-
+  padding-bottom: 10px;
+  padding-top: none;
 }
 
 .nav-check:checked ~ .nav {
@@ -49,11 +50,6 @@ label.nav-label::before {
   width: 100%;
 }
 
-h1 {
-  font-size: 3em;
-  line-height: 1.4;
-}
-
 .btn-red {
   background-color: #d94650;
   border: 1px solid #d94650;
@@ -65,7 +61,7 @@ h1 {
 }
 
 .home-banner-blur {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(225, 225, 225, .7);
   border-radius: 15px;
   -webkit-filter: blur(2px);
   filter: blur(30px);
@@ -137,6 +133,23 @@ li {
   max-width: 300px;
 }
 
+li a {
+  padding: .75em;
+  text-decoration: none;
+  color: #000;
+}
+
+li a:hover {
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.banner-text h1 {
+  font-size: 1.75em;
+  line-height: normal;
+}
+
 @media only screen and (min-width: 38em) {
 
   .card-type-1 {
@@ -159,21 +172,101 @@ li {
     max-width: 400px;
   }
 
+  .banner-text h1 {
+    font-size: 2em;
+  }
+
 }
 
-@media only screen and (min-width: 55em) {
+@media only screen and (min-width: 60em) {
 
   .home-banner {
     height: auto;
     width: 100%;
   }
 
+  .nav {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+  }
+
+  .li {
+    display: inline-block;
+  }
+
+  .nav-check:checked ~ .nav {
+    display: inline-block;
+  }
+
+  .nav-label {
+    cursor: pointer;
+    display: none;
+    width: 40px;
+  }
+
+  .nav-open,
+  .nav-close {
+    display: none;
+  }
+
+  .nav-close {
+    display: none;
+  }
+
+  .nav-check:checked ~ .nav-label .nav-open {
+    display: none;
+  }
+
+  .nav-check:checked ~ .nav-label .nav-close {
+    display: none;
+  }
+
+  label.nav-label::before {
+    display: none;
+  }
+
+  nav li:last-child a {
+    background-color: #d94650;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+
 }
 
-@media only screen and (min-width: 100em) {
+@media only screen and (min-width: 120em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  .logo {
+    float: right;
+  }
+
+  .nav li{
+  padding-left: 2em;
+  margin-top: 20px;
+  }
+
+nav {
+  padding-right: 20em;
+  }
+
+  .banner-text h1{
+    font-size: 3.5em;
+    white-space: nowrap;
+  }
+
+  .home-banner-caption {
+    font-size: 2em;
+    line-height: inherit;
+  }
 
   .home-banner-blur {
-    white-space: nowrap;
+    font-size: 2em;
+    line-height: inherit;
   }
 
 }
