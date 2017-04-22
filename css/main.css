@@ -77,13 +77,33 @@ li {
   width: 250px;
 }
 
+.card-type-1 {
+  display: none;
+}
+
+.red {
+  color: #d94650;
+}
+
+.blue {
+  color: #3c3c92;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .card-type-1 {
+    display: inline-block;
+  }
+
+  .card-type-2 {
+    display: none;
+  }
+
+}
 @media only screen and (min-width: 55em) {
 
   .home-banner {
     height: auto;
-  }
-
-  img {
     width: 100%;
   }
 
