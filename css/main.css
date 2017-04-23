@@ -75,6 +75,10 @@ li {
   max-width: 400px;
 }
 
+.card-type {
+  padding-left: 1em;
+}
+
 .card-type-1 {
   display: none;
   max-width: 400px;
@@ -247,7 +251,7 @@ li a:hover {
   }
 
   .test {
-    max-width: 300px;
+    max-width: 280px;
   }
 
   .quote-l {
@@ -261,6 +265,10 @@ li a:hover {
 }
 
 @media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 130%;
+  }
 
   .home-banner {
     height: auto;
