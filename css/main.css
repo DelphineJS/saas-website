@@ -184,8 +184,7 @@ li a {
   color: #000;
 }
 
-nav a:hover,
-.bottom-nav a:hover {
+nav a:hover {
   background-color: darkgray;
   border-radius: 10px;
   color: #fff;
@@ -262,6 +261,16 @@ nav a:hover,
 
 form {
   max-width: 300px;
+}
+
+.bottom-logo {
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+}
+
+.bottom-nav  {
+  position: relative;
 }
 
 @media only screen and (min-width: 38em) {
@@ -413,6 +422,14 @@ form {
 
   .bottom-nav div a {
     float: none;
+  }
+
+  .bottom-logo {
+    position: static;
+  }
+
+  .bottom-nav  {
+    position: static;
   }
 
 }
