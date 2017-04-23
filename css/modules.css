@@ -835,10 +835,6 @@ select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Ccircle cx='128' cy='128' r='70.4'/%3E%3C/svg%3E");
 }
 
-[type="radio"]:focus + label::before,
-[type="radio"] + label:focus::before {
-  box-shadow: 0 0 0 3px #000;
-  z-index: 1000;
 }
 
 [type="range"] {
@@ -1061,10 +1057,6 @@ select:focus {
   outline-offset: 0;
 }
 
-a:focus, [tabindex="0"]:focus {
-  outline-offset: 3px;
-}
-
 .skip-links {
   margin: 0;
   padding: 0;
@@ -1091,7 +1083,6 @@ a:focus, [tabindex="0"]:focus {
 
 .skip-links a:focus,
 .skip-links button:focus {
-  outline-offset: 3px;
   top: 0;
 }
 
