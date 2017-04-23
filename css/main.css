@@ -139,13 +139,27 @@ li {
   background-color: #e2e2e2;
 }
 
+.back-white {
+  background-color: #fff;
+}
+
 .cards-container {
   max-width: 1500px;
   min-height: 250px;
 }
 
 .shadow {
-  box-shadow: 0 15px 15px #e6e6e6;
+  -webkit-box-shadow: 0 15px 15px rgba(230, 230, 230, 0.5);
+  -moz-box-shadow: 0 15px 15px rgba(230, 230, 230, 0.5);
+  box-shadow: 0 15px 15px rgba(230, 230, 230, 0.5);
+  z-index: 1000;
+
+}
+
+.shadow-dk {
+  -webkit-box-shadow: 0 15px 15px rgba(128, 128, 128, 0.3);
+  -moz-box-shadow: 0 15px 15px rgba(128, 128, 128, 0.3);
+  box-shadow: 0 15px 15px rgba(128, 128, 128, 0.3);
   z-index: 1000;
 }
 
@@ -170,7 +184,8 @@ li a {
   color: #000;
 }
 
-nav a:hover {
+nav a:hover,
+bottom-nav a:hover {
   background-color: darkgray;
   border-radius: 10px;
   color: #fff;
@@ -207,6 +222,42 @@ nav a:hover {
   max-width: 300px;
   margin: 0 auto;
 }
+
+.pricing-back {
+    background-image: url("../images/background-shapes.svg");
+    background-color: #F1F1F1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.price-column {
+  max-width: 333.33%;
+}
+
+.pricing-box {
+  max-width: 275px;
+  margin: 0 auto;
+}
+
+.pricing-all {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bullet-red {
+  list-style-image: url("../images/bullet-red.svg");
+  list-style-position: inside;
+}
+
+.price {
+  font-size: 2.5em;
+}
+
+.bottom-nav {
+  max-width: 1500px;
+}
+
 
 @media only screen and (min-width: 38em) {
 
@@ -328,6 +379,16 @@ nav a:hover {
     margin-right: 10em;
   }
 
+  .bottom-pricing {
+  height: 563px;
+  position: relative;
+  }
+
+  .pricing-btn {
+    position: absolute;
+    bottom: 1.5em;
+  }
+
 }
 
 @media only screen and (min-width: 80em) {
@@ -335,6 +396,14 @@ nav a:hover {
   .bottom-nav {
     text-align: center;
     margin: 0 auto;
+  }
+
+  .bottom-nav ul li {
+    display: inline-block;
+  }
+
+  .bottom-nav div a {
+    float: none;
   }
 
 }
@@ -346,7 +415,8 @@ nav a:hover {
   }
 
   .logo {
-    float: right;
+    position: absolute;
+    left: 20%;
   }
 
   .nav li {
