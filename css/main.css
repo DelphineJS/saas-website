@@ -257,6 +257,7 @@ nav a:hover {
 
 .bottom-nav {
   max-width: 1500px;
+  position: relative;
 }
 
 form {
@@ -266,11 +267,7 @@ form {
 .bottom-logo {
   position: absolute;
   bottom: 10px;
-  right:10px;
-}
-
-.bottom-nav  {
-  position: relative;
+  right: 10px;
 }
 
 @media only screen and (min-width: 38em) {
@@ -414,21 +411,14 @@ form {
   .bottom-nav {
     text-align: center;
     margin: 0 auto;
+    position: static;
   }
 
   .bottom-nav ul li {
     display: inline-block;
   }
 
-  .bottom-nav div a {
-    float: none;
-  }
-
   .bottom-logo {
-    position: static;
-  }
-
-  .bottom-nav  {
     position: static;
   }
 
