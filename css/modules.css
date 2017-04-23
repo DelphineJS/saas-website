@@ -810,7 +810,7 @@ select {
 }
 
 [type="checkbox"]:focus + label::before {
-  outline: 3px solid #000;
+  outline: 3px solid #fff;
   z-index: 1000;
 }
 
@@ -838,7 +838,7 @@ select {
 
 [type="radio"]:focus + label::before,
 [type="radio"] + label:focus::before {
-  box-shadow: 0 0 0 3px #000;
+  box-shadow: 0 0 0 3px #fff;
   z-index: 1000;
 }
 
@@ -994,7 +994,7 @@ button:hover,
 .btn:hover {
   background-color: #000;
   border-color: #000;
-  color: #fff;
+  color: fff;
 }
 
 button[disabled] {
@@ -1059,7 +1059,7 @@ input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  outline: 3px solid #000;
+  outline: 3px solid #fff;
   outline-offset: 0;
 }
 
