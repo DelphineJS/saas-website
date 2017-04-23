@@ -301,7 +301,7 @@ form {
   }
 
   .banner-text h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .card-image-1 {
@@ -376,6 +376,24 @@ form {
 
   nav li:last-child a {
     background-color: #d94650;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  nav li:last-child a:hover {
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  nav li:last-child .btn-none {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+  }
+
+  nav li:last-child .btn-none:hover {
+    background-color: darkgray;
     border-radius: 10px;
     color: #fff;
   }
