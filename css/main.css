@@ -50,18 +50,8 @@ label.nav-label::before {
   width: 100%;
 }
 
-.btn-red {
-  background-color: #d94650;
-  border: 1px solid #d94650;
-}
-
-.btn-teal {
-  background-color: #426875;
-  border: 1px solid #426875;
-}
-
 .home-banner-blur {
-  background-color: rgba(225, 225, 225, .7);
+  background-color: rgba(225, 225, 225, .5);
   border-radius: 15px;
   -webkit-filter: blur(2px);
   filter: blur(30px);
@@ -95,6 +85,12 @@ li {
   max-width: 400px;
 }
 
+.card-type-5 {
+  display: none;
+}
+
+/* Colours*/
+
 .red {
   color: #d94650;
 }
@@ -103,22 +99,32 @@ li {
   color: #3c3c92;
 }
 
-.cards-container {
-  max-width: 1000px;
-  min-height: 250px;
+.teal {
+  color: #355061;
 }
 
-.icon-list,
-.cards {
-  box-shadow: 0 15px 15px #e6e6e6;
+.pink {
+  color: #de93b2;
 }
 
-.icons {
-  max-width: 1000px;
+.btn-red {
+  background-color: #d94650;
+  border: 1px solid #d94650;
 }
 
-.icon-text {
-  max-width: 250px;
+.btn-teal {
+  background-color: #426875;
+  border: 1px solid #426875;
+}
+
+.btn-pink {
+  background-color: #de93b2;
+  border: 1px solid #de93b2;
+}
+
+.btn-blue {
+  background-color: #3c3c92;
+  border: 1px solid #3c3c92;
 }
 
 .back-lt-gray {
@@ -129,8 +135,29 @@ li {
   background-color: #e2e2e2;
 }
 
+.cards-container {
+  max-width: 1500px;
+  min-height: 250px;
+}
+
+.shadow {
+  box-shadow: 0 15px 15px #e6e6e6;
+  z-index: 1000;
+}
+
+.icons {
+  max-width: 1500px;
+}
+
+.icon-text {
+  max-width: 250px;
+}
+
 .sign-up-text {
   max-width: 300px;
+  display: block;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 li a {
@@ -140,7 +167,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #000;
+  background-color: darkgray;
   border-radius: 10px;
   color: #fff;
 }
@@ -148,6 +175,33 @@ li a:hover {
 .banner-text h1 {
   font-size: 1.75em;
   line-height: normal;
+}
+
+.current {
+  color: #d94650;
+}
+
+.card-image-1 {
+  display: none;
+}
+
+.quote-l {
+  display: none;
+  max-width: 700px;
+}
+
+.testimonial {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.test {
+  margin: 0 auto;
+}
+
+.sign {
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 38em) {
@@ -168,12 +222,40 @@ li a:hover {
     display: none;
   }
 
+  .card-type-5 {
+    display: inline-block;
+  }
+
+  .card-type-6 {
+    display: none;
+  }
+
   .sign-up-text {
-    max-width: 400px;
+    max-width: 600px;
   }
 
   .banner-text h1 {
     font-size: 2em;
+  }
+
+  .card-image-1 {
+    display: inline-block;
+  }
+
+  .card-image-2 {
+    display: none;
+  }
+
+  .test {
+    max-width: 300px;
+  }
+
+  .quote-l {
+    display: block;
+  }
+
+  .quote-sm {
+    display: none;
   }
 
 }
@@ -233,6 +315,20 @@ li a:hover {
     color: #ffffff;
   }
 
+  .sign {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+
+}
+
+@media only screen and (min-width: 80em) {
+
+  .bottom-nav {
+    text-align: center;
+    margin: 0 auto;
+  }
+
 }
 
 @media only screen and (min-width: 120em) {
@@ -250,7 +346,7 @@ li a:hover {
   margin-top: 20px;
   }
 
-nav {
+.nav-top {
   padding-right: 20em;
   }
 
