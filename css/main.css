@@ -149,17 +149,17 @@ li {
 }
 
 .shadow {
-  -webkit-box-shadow: 0 15px 15px rgba(230, 230, 230, 0.5);
-  -moz-box-shadow: 0 15px 15px rgba(230, 230, 230, 0.5);
-  box-shadow: 0 15px 15px rgba(230, 230, 230, 0.5);
+  -webkit-box-shadow: 0 15px 15px rgba(230, 230, 230, .5);
+  -moz-box-shadow: 0 15px 15px rgba(230, 230, 230, .5);
+  box-shadow: 0 15px 15px rgba(230, 230, 230, .5);
   z-index: 1000;
 
 }
 
 .shadow-dk {
-  -webkit-box-shadow: 0 15px 15px rgba(128, 128, 128, 0.3);
-  -moz-box-shadow: 0 15px 15px rgba(128, 128, 128, 0.3);
-  box-shadow: 0 15px 15px rgba(128, 128, 128, 0.3);
+  -webkit-box-shadow: 0 15px 15px rgba(128, 128, 128, .3);
+  -moz-box-shadow: 0 15px 15px rgba(128, 128, 128, .3);
+  box-shadow: 0 15px 15px rgba(128, 128, 128, .3);
   z-index: 1000;
 }
 
@@ -185,7 +185,7 @@ li a {
 }
 
 nav a:hover,
-bottom-nav a:hover {
+.bottom-nav a:hover {
   background-color: darkgray;
   border-radius: 10px;
   color: #fff;
@@ -224,11 +224,11 @@ bottom-nav a:hover {
 }
 
 .pricing-back {
-    background-image: url("../images/background-shapes.svg");
-    background-color: #F1F1F1;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover
+  background-image: url("../images/background-shapes.svg");
+  background-color: #f1f1f1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .price-column {
@@ -257,7 +257,6 @@ bottom-nav a:hover {
 .bottom-nav {
   max-width: 1500px;
 }
-
 
 @media only screen and (min-width: 38em) {
 
@@ -380,8 +379,8 @@ bottom-nav a:hover {
   }
 
   .bottom-pricing {
-  height: 563px;
-  position: relative;
+    height: 563px;
+    position: relative;
   }
 
   .pricing-btn {
