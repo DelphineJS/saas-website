@@ -432,6 +432,7 @@ form {
   .logo {
     position: absolute;
     left: 20%;
+    top: 1.5em;
   }
 
   .nav li {
