@@ -270,6 +270,12 @@ form {
   right: 10px;
 }
 
+.thank-you {
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 38em) {
 
   .card-type-1 {
