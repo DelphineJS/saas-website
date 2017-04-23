@@ -5,7 +5,7 @@ html {
 .nav {
   display: none;
   padding-bottom: 10px;
-  padding-top: none;
+  padding-top: 0;
 }
 
 .nav-check:checked ~ .nav {
@@ -59,7 +59,7 @@ label.nav-label::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: #ffffff;
+  color: #fff;
 
 }
 
@@ -89,7 +89,7 @@ li {
   display: none;
 }
 
-/* Colours*/
+/* Colours */
 
 .red {
   color: #d94650;
@@ -312,7 +312,7 @@ li a:hover {
   nav li:last-child a {
     background-color: #d94650;
     border-radius: 10px;
-    color: #ffffff;
+    color: #fff;
   }
 
   .sign {
@@ -341,16 +341,16 @@ li a:hover {
     float: right;
   }
 
-  .nav li{
-  padding-left: 2em;
-  margin-top: 20px;
+  .nav li {
+    padding-left: 2em;
+    margin-top: 20px;
   }
 
-.nav-top {
-  padding-right: 20em;
+  .nav-top {
+    padding-right: 20em;
   }
 
-  .banner-text h1{
+  .banner-text h1 {
     font-size: 3.5em;
     white-space: nowrap;
   }
