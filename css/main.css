@@ -283,7 +283,6 @@ input {
   white-space: nowrap;
 }
 
-
 @media only screen and (min-width: 38em) {
 
   .card-type-1 {
@@ -295,7 +294,7 @@ input {
   }
 
   .card-type-3 {
-     display: block;
+    display: block;
   }
 
   .card-type-4 {
