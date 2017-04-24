@@ -144,7 +144,7 @@ li {
 }
 
 .cards-container {
-  max-width: 1500px;
+  max-width: 1000px;
   min-height: 250px;
 }
 
@@ -209,18 +209,18 @@ nav a:hover {
 }
 
 .testimonial {
-  max-width: 750px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 .test {
   margin: 0 auto;
-  max-width: 230px;
+  max-width: 200px;
 
 }
 
 .sign {
-  max-width: 300px;
+  max-width: 200px;
   margin: 0 auto;
 }
 
@@ -281,7 +281,7 @@ input {
 }
 
 .check {
-  font-size: .6em;
+  font-size: .65em;
   white-space: nowrap;
 }
 
