@@ -264,6 +264,10 @@ form {
   max-width: 300px;
 }
 
+input {
+  font-size: .75em;
+}
+
 .bottom-logo {
   position: absolute;
   bottom: 10px;
@@ -278,6 +282,14 @@ form {
 
 input {
   outline: 0;
+}
+
+.check-s {
+  font-size: .6em;
+}
+
+.check-l {
+  display: none;
 }
 
 @media only screen and (min-width: 38em) {
@@ -311,7 +323,7 @@ input {
   }
 
   .banner-text h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .card-image-1 {
@@ -428,7 +440,20 @@ input {
   }
 
   .form {
-    min-width: 750px;
+    min-width: 500px;
+    max-width: 800px;
+  }
+
+  input {
+    font-size: .8em;
+  }
+
+  .check-s {
+    display: none;
+  }
+
+  .check-l {
+    display: inline-block;
   }
 
 }
