@@ -320,6 +320,10 @@ th, td {
   width: 10em;
 }
 
+.select-level {
+  white-space: nowrap;
+}
+
 @media only screen and (min-width: 38em) {
 
   .card-type-1 {
