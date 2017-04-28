@@ -283,6 +283,43 @@ input {
   white-space: nowrap;
 }
 
+tbody tr:nth-child(odd) {
+  background-color: #e2e2e2;
+}
+
+table {
+  border: 3px solid #e2e2e2;
+  min-width: 900px;
+}
+
+th, td {
+  border-bottom: none;
+}
+
+.level {
+  width: 7em;
+}
+
+.pricing {
+  width: 5em;
+}
+
+.devices {
+  width: 5em;
+}
+
+.fonts {
+  width: 8em;
+}
+
+.filters {
+  width: 5em;
+}
+
+.extras {
+  width: 10em;
+}
+
 @media only screen and (min-width: 38em) {
 
   .card-type-1 {
@@ -433,6 +470,14 @@ input {
   .form {
     min-width: 500px;
     max-width: 800px;
+  }
+
+  .table-wrap {
+    overflow: visible;
+  }
+
+  caption {
+    text-align: center;
   }
 
 }
