@@ -50,19 +50,6 @@ label.nav-label::before {
   width: 100%;
 }
 
-.home-banner-blur {
-  background-color: rgba(225, 225, 225, .5);
-  border-radius: 15px;
-  -webkit-filter: blur(2px);
-  filter: blur(30px);
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #fff;
-
-}
-
 .icon-label {
   color: #d94650;
 }
